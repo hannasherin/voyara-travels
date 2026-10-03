@@ -1,0 +1,44 @@
+{
+  "users": [],
+
+ "destinations": [
+  {
+    "id": "1",
+    "name": "Kerala",
+    "country": "India",
+    "image": "/src/assets/images/destinations/kerala.jpg",
+    "description": "Explore the beautiful backwaters and green landscapes of Kerala."
+  },
+  {
+    "id": "2",
+    "name": "Dubai",
+    "country": "UAE",
+    "image": "/src/assets/images/destinations/dubai.jpg",
+    "description": "Experience luxury, adventure and modern attractions in Dubai."
+  }
+],
+
+  "package": [
+  {
+    "id": "1",
+    "title": "Munnar Escape",
+    "destination": "Kerala",
+    "duration": "3 Days / 2 Nights",
+    "price": 8999,
+    "image": "/src/assets/images/tours/munnar.jpg",
+    "category": "Hill Station",
+    "description": "A relaxing trip through the beautiful hills of Munnar."
+  },
+  {
+    "id": "2",
+    "title": "Dubai Adventure",
+    "destination": "Dubai",
+    "duration": "5 Days / 4 Nights",
+    "price": 45999,
+    "image": "/src/assets/images/tours/dubai.jpg",
+    "category": "International",
+    "description": "Explore the iconic attractions and experiences of Dubai."
+  }
+],
+  "bookings": []
+}

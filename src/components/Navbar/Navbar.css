@@ -1,0 +1,64 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb; /* blue shade */
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #2563eb;
+}
+
+/* Auth buttons */
+.auth-buttons a {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.auth-buttons .login {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.auth-buttons .login:hover {
+  background: #f0f8ff;
+}
+
+.auth-buttons .signup {
+  background: #2563eb;
+  color: white;
+}
+
+.auth-buttons .signup:hover {
+  background: #1e40af;
+}
