@@ -6,16 +6,44 @@
     "id": "1",
     "name": "Kerala",
     "country": "India",
-    "image": "/src/assets/images/destinations/kerala.jpg",
+    "image":"Kerala.png",
     "description": "Explore the beautiful backwaters and green landscapes of Kerala."
   },
   {
     "id": "2",
     "name": "Dubai",
     "country": "UAE",
-    "image": "/src/assets/images/destinations/dubai.jpg",
+    "image":"Dubai.png",
     "description": "Experience luxury, adventure and modern attractions in Dubai."
-  }
+  },
+    {
+      "id": "3",
+      "name": "Maldives",
+      "country": "Maldives",
+      "description": "Enjoy crystal-clear waters, beautiful beaches and relaxing island resorts.",
+       "image":"maldives.png"
+    },
+    {
+      "id": "4",
+      "name": "Goa",
+      "country": "India",
+      "description": "Discover beautiful beaches, nightlife, food and relaxing coastal experiences.",
+       "image":"Goa(2).png"
+    },
+    {
+      "id": "5",
+      "name": "Singapore",
+      "country": "Singapore",
+      "description": "Explore modern attractions, gardens, shopping and exciting city experiences.",
+      "image":"singapore.png"
+    },
+    {
+      "id": "6",
+      "name": "Kashmir",
+      "country": "India",
+      "description": "Experience stunning mountains, valleys, lakes and peaceful landscapes.",
+      "image":"Kashmir(2).png"
+    }
 ],
 
   "package": [

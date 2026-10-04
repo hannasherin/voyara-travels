@@ -15,7 +15,8 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2563eb; /* blue shade */
+  color: #1E9FFF; /* blue shade */
+  text-decoration: none;
 }
 
 /* Navigation links */
@@ -33,7 +34,7 @@
 }
 
 .nav-links li a:hover {
-  color: #2563eb;
+  color: #1E9FFF;
 }
 
 /* Auth buttons */
@@ -46,8 +47,8 @@
 }
 
 .auth-buttons .login {
-  border: 1px solid #2563eb;
-  color: #2563eb;
+  border: 1px solid #1E9FFF;
+  color:#1E9FFF;
 }
 
 .auth-buttons .login:hover {
@@ -55,10 +56,10 @@
 }
 
 .auth-buttons .signup {
-  background: #2563eb;
+  background: #1E9FFF;
   color: white;
 }
 
 .auth-buttons .signup:hover {
-  background: #1e40af;
+  background:#1E9FFF;
 }
