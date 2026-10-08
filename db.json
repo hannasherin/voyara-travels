@@ -28,7 +28,7 @@
       "name": "Goa",
       "country": "India",
       "description": "Discover beautiful beaches, nightlife, food and relaxing coastal experiences.",
-       "image":"Goa(2).png"
+       "image":"Goa.png"
     },
     {
       "id": "5",
@@ -42,7 +42,7 @@
       "name": "Kashmir",
       "country": "India",
       "description": "Experience stunning mountains, valleys, lakes and peaceful landscapes.",
-      "image":"Kashmir(2).png"
+      "image":"Kashmir.png"
     }
 ],
 
