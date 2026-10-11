@@ -1,0 +1,77 @@
+.popular-destination {
+  padding: 60px 7%;
+}
+
+.popular-destination-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.popular-destination-header h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.popular-destination-header p {
+  margin-top: 8px;
+  color: #777;
+}
+
+.see-more {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.see-more:hover {
+  text-decoration: underline;
+}
+
+
+/* 4 cards in one row */
+
+.popular-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+
+.popular-destination-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popular-destination-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.popular-destination-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+
+.popular-destination-info {
+  padding: 15px;
+}
+
+.popular-destination-info h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.popular-destination-info p {
+  margin: 0;
+  color: #777;
+}

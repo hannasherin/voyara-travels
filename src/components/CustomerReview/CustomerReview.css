@@ -1,0 +1,136 @@
+
+.customer-reviews {
+  padding: 75px 7%;
+  background-color: #ffffff;
+}
+
+.reviews-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.reviews-label {
+  color: #087f8c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.reviews-header h2 {
+  font-size: 32px;
+  color: #172b4d;
+  margin: 12px 0;
+}
+
+.reviews-header p {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.review-card {
+  padding: 28px;
+  background-color: #f8fafc;
+  border: 1px solid #e5eaf0;
+  border-radius: 16px;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.quote-icon {
+  color: #087f8c;
+}
+
+.review-stars {
+  display: flex;
+  gap: 3px;
+}
+
+.review-text {
+  color: #566174;
+  font-size: 15px;
+  line-height: 1.8;
+  min-height: 108px;
+}
+
+.review-divider {
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 22px 0;
+}
+
+.review-customer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customer-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #d8f0ef;
+  color: #087f8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.review-customer h3 {
+  color: #172b4d;
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+
+.review-customer span {
+  color: #7b8494;
+  font-size: 13px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .customer-reviews {
+    padding: 50px 5%;
+  }
+
+  .reviews-header h2 {
+    font-size: 26px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-text {
+    min-height: auto;
+  }
+}

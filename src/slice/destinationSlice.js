@@ -14,7 +14,7 @@ export const fetchDestinations=createAsyncThunk(
         return response.data
         
        } catch (error) {
-        return rejectWithValue('no product found')
+        return rejectWithValue('No Destination Found')
        }
     }
 )

@@ -6,7 +6,7 @@ import './DestinationCard.css'
 
 
 
-const DestinationCard = ({limit}) => {
+const DestinationCard = () => {
 
 
 const {destinations,isloading,error}=useSelector((state)=>state.destinationInfo)
@@ -28,7 +28,7 @@ useEffect(()=>{
   return (
    
     <div className="destination-grid">
-      {destinations?.slice(0, limit || destinations.length).map((destination) => (
+      {destinations?.map((destination) => (
     <div className="destination-card-wrapper" key={destination.id}>
 
       <div className="destination-card">

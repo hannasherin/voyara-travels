@@ -1,0 +1,417 @@
+
+/* Common styles */
+.about-page {
+  color: #172b4d;
+}
+
+.about-page button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #087f8c;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease,
+              transform 0.3s ease;
+}
+
+.about-page button:hover {
+  background: #066873;
+  transform: translateY(-2px);
+}
+
+/* Hero */
+.about-hero {
+  min-height: 400px;
+  background:
+    linear-gradient(
+      rgba(10, 30, 48, 0.62),
+      rgba(10, 30, 48, 0.62)
+    ),
+    url("../../assets/images/Hero/ban2.png")
+      center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 7%;
+}
+
+.about-hero-overlay {
+  max-width: 750px;
+  color: white;
+}
+
+.about-hero-overlay > span {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.about-hero h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin: 20px 0 15px;
+}
+
+.about-hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* About intro */
+.about-intro {
+  padding: 85px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-intro-image {
+  position: relative;
+}
+
+.about-intro-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.about-image-label {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  color: #087f8c;
+  padding: 14px 18px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-label {
+  display: inline-block;
+  color: #087f8c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-intro-content h2,
+.about-section-heading h2 {
+  font-size: 34px;
+  line-height: 1.3;
+  margin: 15px 0;
+}
+
+.about-intro-content p {
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+/* Mission and vision */
+.about-purpose {
+  padding: 60px 7%;
+  background: #f4f9fa;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.purpose-card {
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  border: 1px solid #e5eeee;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.purpose-card:hover {
+  transform: translateY(-5px);
+}
+
+.purpose-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 18px;
+  border-radius: 14px;
+  background: #e4f5f4;
+  color: #087f8c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.purpose-icon svg {
+  width: 29px;
+  height: 29px;
+}
+
+.purpose-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.purpose-card p {
+  max-width: 450px;
+  margin: 0 auto;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Benefits */
+.about-benefits {
+  padding: 80px 7%;
+}
+
+.about-section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-section-heading p {
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.about-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.about-benefit-card {
+  padding: 28px 20px;
+  border: 1px solid #e5eaf0;
+  border-radius: 13px;
+  text-align: center;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.about-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+}
+
+.about-benefit-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 18px;
+  background: #e4f5f4;
+  color: #087f8c;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-benefit-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.8;
+}
+
+.about-benefit-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.about-benefit-card p {
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Destinations */
+.about-destinations {
+  padding: 75px 7%;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.about-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  text-align: left;
+}
+
+.about-destination-card {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.about-destination-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    transparent 35%,
+    rgba(0, 0, 0, 0.75)
+  );
+}
+
+.about-destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.about-destination-card:hover img {
+  transform: scale(1.07);
+}
+
+.about-destination-info {
+  position: absolute;
+  z-index: 1;
+  bottom: 22px;
+  left: 22px;
+  color: white;
+}
+
+.about-destination-info span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.about-destination-info h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.about-destinations-btn {
+  margin-top: 35px;
+}
+
+/* Call to action */
+.about-cta {
+  margin: 70px 7%;
+  padding: 55px 25px;
+  border-radius: 18px;
+  background: #eaf7f7;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: 32px;
+  margin: 0 0 15px;
+}
+
+.about-cta p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .about-intro {
+    gap: 35px;
+  }
+
+  .about-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-hero h1 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-hero {
+    min-height: 350px;
+    padding: 45px 5%;
+  }
+
+  .about-hero h1 {
+    font-size: 30px;
+  }
+
+  .about-hero p {
+    font-size: 15px;
+  }
+
+  .about-intro {
+    padding: 50px 5%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-intro-image img {
+    height: 280px;
+  }
+
+  .about-intro-content h2,
+  .about-section-heading h2 {
+    font-size: 27px;
+  }
+
+  .about-purpose {
+    padding: 45px 5%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .purpose-card {
+    padding: 28px 20px;
+  }
+
+  .about-benefits {
+    padding: 50px 5%;
+  }
+
+  .about-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-destinations {
+    padding: 50px 5%;
+  }
+
+  .about-destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-destination-card {
+    height: 260px;
+  }
+
+  .about-cta {
+    margin: 45px 5%;
+    padding: 40px 20px;
+  }
+
+  .about-cta h2 {
+    font-size: 26px;
+  }
+}

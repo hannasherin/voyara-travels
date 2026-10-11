@@ -1,9 +1,10 @@
 import React from 'react'
+import PackageCard from '../components/PackageCard/PackageCard'
 
 const Package = () => {
   return (
     <div>
-      <h1>Package</h1>
+      <PackageCard/>
     </div>
   )
 }
