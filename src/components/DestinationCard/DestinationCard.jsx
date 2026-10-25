@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchDestinations } from '../../slice/destinationSlice'
+import { useNavigate } from 'react-router-dom'
 
 const DestinationCard = () => {
   const { destinations, isloading, error } = useSelector(
@@ -9,6 +10,7 @@ const DestinationCard = () => {
   )
 
   const dispatch = useDispatch()
+  const navigate=useNavigate()
 
   useEffect(() => {
     dispatch(fetchDestinations())
@@ -64,6 +66,7 @@ const DestinationCard = () => {
             <button
               type="button"
               className="rounded-lg bg-[#1E9FFF] px-5 py-3 font-semibold text-white transition duration-300 hover:bg-blue-600"
+            onClick={()=>navigate(`/destinations/${encodeURIComponent(destination.name)}/packages`)}
             >
               Explore Now →
             </button>

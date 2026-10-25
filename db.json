@@ -1,158 +1,177 @@
 {
   "users": [],
-
- "destinations": [
-  {
-    "id": "1",
-    "name": "Kerala",
-    "country": "India",
-    "image":"Kerala.png",
-    "description": "Explore the beautiful backwaters and green landscapes of Kerala."
-  },
-  {
-    "id": "2",
-    "name": "Dubai",
-    "country": "UAE",
-    "image":"Dubai.png",
-    "description": "Experience luxury, adventure and modern attractions in Dubai."
-  },
+  "destinations": [
+    {
+      "id": "1",
+      "name": "Kerala",
+      "country": "India",
+      "image": "Kerala.png",
+      "description": "Explore the beautiful backwaters and green landscapes of Kerala."
+    },
+    {
+      "id": "2",
+      "name": "Dubai",
+      "country": "UAE",
+      "image": "Dubai.png",
+      "description": "Experience luxury, adventure and modern attractions in Dubai."
+    },
     {
       "id": "3",
       "name": "Maldives",
       "country": "Maldives",
       "description": "Enjoy crystal-clear waters, beautiful beaches and relaxing island resorts.",
-       "image":"maldives.png"
+      "image": "maldives.png"
     },
     {
       "id": "4",
       "name": "Goa",
       "country": "India",
       "description": "Discover beautiful beaches, nightlife, food and relaxing coastal experiences.",
-       "image":"Goa.png"
+      "image": "Goa.png"
     },
     {
       "id": "5",
       "name": "Singapore",
       "country": "Singapore",
       "description": "Explore modern attractions, gardens, shopping and exciting city experiences.",
-      "image":"singapore.png"
+      "image": "singapore.png"
     },
     {
       "id": "6",
       "name": "Kashmir",
       "country": "India",
       "description": "Experience stunning mountains, valleys, lakes and peaceful landscapes.",
-      "image":"Kashmir.png"
+      "image": "Kashmir.png"
     }
-],
-
-"packages": [
-  
-  {
-    "id": "1",
-    "title": "Munnar Honeymoon Special",
-    "destination": "Kerala",
-    "duration": "5 Days / 4 Nights",
-    "price": 18999,
-    "category": "Honeymoon",
-    "image": "mnnar.png",
-    "description": "Enjoy a romantic Kerala trip covering Munnar, Alleppey and beautiful nature spots."
-  },
-  {
-    "id": "2",
-    "title": "Dubai Luxury Escape",
-    "destination": "Dubai",
-    "duration": "5 Days / 4 Nights",
-    "price": 305999,
-    "category": "Luxury",
-    "image": "Dubai.png",
-    "description": "Experience Dubai's iconic attractions, luxury shopping and exciting city life."
-  },
-  
-  {
-    "id": "3",
-    "title": "Kashmir Paradise Tour",
-    "destination": "Kashmir",
-    "duration": "5 Days / 4 Nights",
-    "price": 44999,
-    "category": "Hill Station",
-    "image": "Kashmir.png",
-    "description": "Explore beautiful valleys, mountains, lakes and peaceful landscapes of Kashmir."
-  },
-  
-  {
-    "id": "4",
-    "title": "Maldives Romantic Escape",
-    "destination": "Maldives",
-    "duration": "4 Days / 3 Nights",
-    "price": 145999,
-    "category": "Honeymoon",
-    "image": "maldivesrmtc.png",
-    "description": "Relax on beautiful islands with crystal-clear water and stunning beaches."
-  },
-  {
-    "id": "5",
-    "title": "Kerala Nature Escape",
-    "destination": "Kerala",
-    "duration": "4 Days / 3 Nights",
-    "price": 30999,
-    "category": "Nature",
-    "image": "Kerala.png",
-    "description": "Explore the beautiful backwaters, hill stations and beaches of Kerala."
-  },
-  {
-    "id": "6",
-    "title": "Goa Beach Holiday",
-    "destination": "Goa",
-    "duration": "4 Days / 3 Nights",
-    "price": 55999,
-    "category": "Beach",
-    "image": "Goa.png",
-    "description": "Relax on beautiful beaches and enjoy the food, nightlife and culture of Goa."
-  },
-  
-  {
-    "id": "7",
-    "title": "Dubai Adventure Package",
-    "destination": "Dubai",
-    "duration": "4 Days / 3 Nights",
-    "price": 429999,
-    "category": "Adventure",
-    "image": "dubaiadv.png",
-    "description": "Enjoy desert safari, city tours and exciting adventures across Dubai."
-  },
-  
-  {
-    "id": "8",
-    "title": "Maldives Island Holiday",
-    "destination": "Maldives",
-    "duration": "5 Days / 4 Nights",
-    "price": 152999,
-    "category": "Beach",
-    "image": "maldives.png",
-    "description": "Enjoy island resorts, water activities and unforgettable tropical views."
-  },
-  {
-    "id": "9",
-    "title": "Singapore City Explorer",
-    "destination": "Singapore",
-    "duration": "5 Days / 4 Nights",
-    "price": 138999,
-    "category": "International",
-    "image": "singapore.png",
-    "description": "Explore modern attractions, beautiful gardens, shopping and exciting city experiences."
-  },
-  
-  {
-    "id": "10",
-    "title": "Kashmir Winter Escape",
-    "destination": "Kashmir",
-    "duration": "6 Days / 5 Nights",
-    "price": 39999,
-    "category": "Adventure",
-    "image": "kashmirwinter.png",
-    "description": "Experience the snowy mountains, scenic valleys and winter beauty of Kashmir."
-  }
-],
-  "bookings": []
+  ],
+  "packages": [
+    {
+      "id": "1",
+      "title": "Munnar Honeymoon Special",
+      "destination": "Kerala",
+      "duration": "5 Days / 4 Nights",
+      "price": 18999,
+      "category": "Honeymoon",
+      "image": "mnnar.png",
+      "description": "Enjoy a romantic Kerala trip covering Munnar, Alleppey and beautiful nature spots."
+    },
+    {
+      "id": "2",
+      "title": "Dubai Luxury Escape",
+      "destination": "Dubai",
+      "duration": "5 Days / 4 Nights",
+      "price": 305999,
+      "category": "Luxury",
+      "image": "Dubai.png",
+      "description": "Experience Dubai's iconic attractions, luxury shopping and exciting city life."
+    },
+    {
+      "id": "3",
+      "title": "Kashmir Paradise Tour",
+      "destination": "Kashmir",
+      "duration": "5 Days / 4 Nights",
+      "price": 44999,
+      "category": "Hill Station",
+      "image": "Kashmir.png",
+      "description": "Explore beautiful valleys, mountains, lakes and peaceful landscapes of Kashmir."
+    },
+    {
+      "id": "4",
+      "title": "Maldives Romantic Escape",
+      "destination": "Maldives",
+      "duration": "4 Days / 3 Nights",
+      "price": 145999,
+      "category": "Honeymoon",
+      "image": "maldivesrmtc.png",
+      "description": "Relax on beautiful islands with crystal-clear water and stunning beaches."
+    },
+    {
+      "id": "5",
+      "title": "Kerala Nature Escape",
+      "destination": "Kerala",
+      "duration": "4 Days / 3 Nights",
+      "price": 30999,
+      "category": "Nature",
+      "image": "Kerala.png",
+      "description": "Explore the beautiful backwaters, hill stations and beaches of Kerala."
+    },
+    {
+      "id": "6",
+      "title": "Goa Beach Holiday",
+      "destination": "Goa",
+      "duration": "4 Days / 3 Nights",
+      "price": 55999,
+      "category": "Beach",
+      "image": "Goa.png",
+      "description": "Relax on beautiful beaches and enjoy the food, nightlife and culture of Goa."
+    },
+    {
+      "id": "7",
+      "title": "Dubai Adventure Package",
+      "destination": "Dubai",
+      "duration": "4 Days / 3 Nights",
+      "price": 429999,
+      "category": "Adventure",
+      "image": "dubaiadv.png",
+      "description": "Enjoy desert safari, city tours and exciting adventures across Dubai."
+    },
+    {
+      "id": "8",
+      "title": "Maldives Island Holiday",
+      "destination": "Maldives",
+      "duration": "5 Days / 4 Nights",
+      "price": 152999,
+      "category": "Beach",
+      "image": "maldives.png",
+      "description": "Enjoy island resorts, water activities and unforgettable tropical views."
+    },
+    {
+      "id": "9",
+      "title": "Singapore City Explorer",
+      "destination": "Singapore",
+      "duration": "5 Days / 4 Nights",
+      "price": 138999,
+      "category": "International",
+      "image": "singapore.png",
+      "description": "Explore modern attractions, beautiful gardens, shopping and exciting city experiences."
+    },
+    {
+      "id": "10",
+      "title": "Kashmir Winter Escape",
+      "destination": "Kashmir",
+      "duration": "6 Days / 5 Nights",
+      "price": 39999,
+      "category": "Adventure",
+      "image": "kashmirwinter.png",
+      "description": "Experience the snowy mountains, scenic valleys and winter beauty of Kashmir."
+    }
+  ],
+  "bookings": [
+    {
+      "packageId": "1",
+      "packageTitle": "Munnar Honeymoon Special",
+      "destination": "Kerala",
+      "fullName": "Hanna Basheer",
+      "email": "hannasherinpp2000@gmail.com",
+      "phone": "9447746641",
+      "travellers": 1,
+      "travelDate": "2026-10-27",
+      "totalPrice": 18999,
+      "status": "Pending",
+      "id": 1
+    },
+    {
+      "packageId": "2",
+      "packageTitle": "Dubai Luxury Escape",
+      "destination": "Dubai",
+      "fullName": "Hanna Basheer",
+      "email": "hannasherinpp2000@gmail.com",
+      "phone": "9447746641",
+      "travellers": 2,
+      "travelDate": "2026-11-02",
+      "totalPrice": 611998,
+      "status": "Pending",
+      "id": 2
+    }
+  ]
 }
