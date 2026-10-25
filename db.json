@@ -63,7 +63,7 @@
     "title": "Dubai Luxury Escape",
     "destination": "Dubai",
     "duration": "5 Days / 4 Nights",
-    "price": 35999,
+    "price": 305999,
     "category": "Luxury",
     "image": "Dubai.png",
     "description": "Experience Dubai's iconic attractions, luxury shopping and exciting city life."
@@ -74,7 +74,7 @@
     "title": "Kashmir Paradise Tour",
     "destination": "Kashmir",
     "duration": "5 Days / 4 Nights",
-    "price": 24999,
+    "price": 44999,
     "category": "Hill Station",
     "image": "Kashmir.png",
     "description": "Explore beautiful valleys, mountains, lakes and peaceful landscapes of Kashmir."
@@ -85,7 +85,7 @@
     "title": "Maldives Romantic Escape",
     "destination": "Maldives",
     "duration": "4 Days / 3 Nights",
-    "price": 45999,
+    "price": 145999,
     "category": "Honeymoon",
     "image": "maldivesrmtc.png",
     "description": "Relax on beautiful islands with crystal-clear water and stunning beaches."
@@ -95,7 +95,7 @@
     "title": "Kerala Nature Escape",
     "destination": "Kerala",
     "duration": "4 Days / 3 Nights",
-    "price": 12999,
+    "price": 30999,
     "category": "Nature",
     "image": "Kerala.png",
     "description": "Explore the beautiful backwaters, hill stations and beaches of Kerala."
@@ -105,7 +105,7 @@
     "title": "Goa Beach Holiday",
     "destination": "Goa",
     "duration": "4 Days / 3 Nights",
-    "price": 12999,
+    "price": 55999,
     "category": "Beach",
     "image": "Goa.png",
     "description": "Relax on beautiful beaches and enjoy the food, nightlife and culture of Goa."
@@ -116,7 +116,7 @@
     "title": "Dubai Adventure Package",
     "destination": "Dubai",
     "duration": "4 Days / 3 Nights",
-    "price": 29999,
+    "price": 429999,
     "category": "Adventure",
     "image": "dubaiadv.png",
     "description": "Enjoy desert safari, city tours and exciting adventures across Dubai."
@@ -127,7 +127,7 @@
     "title": "Maldives Island Holiday",
     "destination": "Maldives",
     "duration": "5 Days / 4 Nights",
-    "price": 52999,
+    "price": 152999,
     "category": "Beach",
     "image": "maldives.png",
     "description": "Enjoy island resorts, water activities and unforgettable tropical views."
@@ -137,7 +137,7 @@
     "title": "Singapore City Explorer",
     "destination": "Singapore",
     "duration": "5 Days / 4 Nights",
-    "price": 38999,
+    "price": 138999,
     "category": "International",
     "image": "singapore.png",
     "description": "Explore modern attractions, beautiful gardens, shopping and exciting city experiences."
@@ -148,7 +148,7 @@
     "title": "Kashmir Winter Escape",
     "destination": "Kashmir",
     "duration": "6 Days / 5 Nights",
-    "price": 29999,
+    "price": 39999,
     "category": "Adventure",
     "image": "kashmirwinter.png",
     "description": "Experience the snowy mountains, scenic valleys and winter beauty of Kashmir."

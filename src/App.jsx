@@ -9,7 +9,8 @@ import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact"
 import Login from "./pages/Login/Login"
 import Register from "./pages/Register/Register"
-
+import PackageDetails from "./pages/PackageDetails"
+import Booking from "./pages/Booking"
 
 function App() {
   
@@ -26,6 +27,8 @@ function App() {
               <Route path="/contact" element={<Contact/>} />
               <Route path="/login" element={<Login/>} />
               <Route path="/register" element={<Register/>} />
+              <Route path="/package/:id" element={<PackageDetails/>} />
+              <Route path="/booking/:id" element={<Booking/>} />
       </Routes>
 <Footer/>
      

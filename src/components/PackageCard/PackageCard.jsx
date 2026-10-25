@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchPackages } from '../../slice/packageSlice'
 import './packageCard.css'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -12,6 +13,7 @@ const PackageCard = () => {
 
 const {packages,isloading,error}=useSelector((state)=>state.packageInfo)
 const dispatch=useDispatch()
+const navigate=useNavigate()
 useEffect(()=>{
     dispatch(fetchPackages())
 },[])
@@ -53,8 +55,8 @@ useEffect(()=>{
             {packages.description}
           </p>
 
-          <button className="explore-btn">
-            Explore Now →
+          <button className="explore-btn" onClick={()=>navigate(`/package/${packages.id}`)}>
+            View Details →
           </button>
 
         </div>

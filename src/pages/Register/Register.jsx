@@ -12,25 +12,82 @@ import {
 import "./Register.css";
 
 const Register = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  const [error, setError] = useState("");
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  })
+  const [errors, setError] = useState({})
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleRegister = (e) => {
+    e.preventDefault()
+    if (validateRegister()) {
+      const userData = {
+        username: formData.username,
+        email: formData.email,
+        password: formData.password
+      }
+      localStorage.setItem('user', JSON.stringify(userData))
+      alert('Register Successfully')
 
-    const form = e.target;
-    const password = form.password.value;
-    const confirmPassword = form.confirmPassword.value;
+      setFormData({
+        username: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+      })
 
-    if (password !== confirmPassword) {
-      setError("Passwords do not match.");
-      return;
+      setError({})
+
+    }
+  }
+
+  const validateRegister = () => {
+
+    const newError = {}
+
+    // Username
+    if (formData.username.trim() === "") {
+      newError.username = "Username is Required"
     }
 
-    setError("");
-    alert("Registration UI is working! Connect user registration to your API.");
-  };
+    // Email
+    if (formData.email.trim() === "") {
+      newError.email = "Email is Required"
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(formData.email)
+    ) {
+      newError.email = "Enter a valid email"
+    }
+
+    // Password
+    if (formData.password.trim() === "") {
+      newError.password = "Password is Required"
+    } else if (
+      !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(formData.password)
+    ) {
+      newError.password =
+        "Password must be at least 8 characters, include uppercase, lowercase, number and special character."
+    }
+
+    // Confirm Password
+    if (formData.confirmPassword.trim() === "") {
+      newError.confirmPassword = "Confirm Password is Required"
+    } else if (formData.password !== formData.confirmPassword) {
+      newError.confirmPassword = "Passwords do not match"
+    }
+
+    setError(newError)
+
+    return Object.keys(newError).length === 0
+  }
+
+
 
   return (
     <main className="register-page">
@@ -57,17 +114,17 @@ const Register = () => {
             <p>Join Voyara and start planning your next trip.</p>
           </div>
 
-          <form className="register-form" onSubmit={handleSubmit}>
+          <form className="register-form" onSubmit={handleRegister}>
             <label htmlFor="register-name">Full Name</label>
             <div className="register-input">
               <User size={18} />
               <input
                 id="register-name"
-                name="name"
+                name="username"
                 type="text"
                 placeholder="Enter your full name"
-                autoComplete="name"
-                required
+                value={formData.username}
+                onChange={handleChange}
               />
             </div>
 
@@ -79,23 +136,12 @@ const Register = () => {
                 name="email"
                 type="email"
                 placeholder="Enter your email"
-                autoComplete="email"
-                required
+                value={formData.email}
+                onChange={handleChange}
               />
             </div>
 
-            <label htmlFor="register-phone">Phone Number</label>
-            <div className="register-input">
-              <Phone size={18} />
-              <input
-                id="register-phone"
-                name="phone"
-                type="tel"
-                placeholder="Enter your phone number"
-                autoComplete="tel"
-                required
-              />
-            </div>
+
 
             <label htmlFor="register-password">Password</label>
             <div className="register-input">
@@ -103,20 +149,12 @@ const Register = () => {
               <input
                 id="register-password"
                 name="password"
-                type={showPassword ? "text" : "password"}
+                type="password"
                 placeholder="Create a password"
-                autoComplete="new-password"
-                minLength={6}
-                required
+                value={formData.password}
+                onChange={handleChange}
               />
-              <button
-                type="button"
-                className="register-password-toggle"
-                onClick={() => setShowPassword(!showPassword)}
-                aria-label={showPassword ? "Hide password" : "Show password"}
-              >
-                {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
-              </button>
+
             </div>
 
             <label htmlFor="register-confirm-password">
@@ -127,31 +165,15 @@ const Register = () => {
               <input
                 id="register-confirm-password"
                 name="confirmPassword"
-                type={showConfirmPassword ? "text" : "password"}
+                type="password"
                 placeholder="Confirm your password"
-                autoComplete="new-password"
-                minLength={6}
-                required
+                value={formData.confirmPassword}
+                onChange={handleChange}
               />
-              <button
-                type="button"
-                className="register-password-toggle"
-                onClick={() =>
-                  setShowConfirmPassword(!showConfirmPassword)
-                }
-                aria-label={
-                  showConfirmPassword ? "Hide password" : "Show password"
-                }
-              >
-                {showConfirmPassword ? (
-                  <EyeOff size={18} />
-                ) : (
-                  <Eye size={18} />
-                )}
-              </button>
+
             </div>
 
-            {error && <p className="register-error">{error}</p>}
+
 
             <button type="submit" className="register-button">
               Create Account
